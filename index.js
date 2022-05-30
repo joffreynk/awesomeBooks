@@ -30,3 +30,46 @@ function addbook(title, author){
   Mybooks();
   }
 }
+function Mybooks() {
+    if (books && books.length) {
+      let section = document.querySelector('.books');
+      section.innerHTML = '';
+      const listTtitle = document.createElement('h1');
+      listTtitle.innerHTML = 'Awesome Books';
+      section.appendChild(listTtitle);
+      books.forEach((book) => {
+        const author = document.createElement('p');
+        const title = document.createElement('p');
+        const btn = document.createElement('button');
+        btn.innerHTML = 'Remove';
+        const hr = document.createElement('hr');
+        title.innerHTML = book.title;
+        author.innerHTML = `by ${book.author}`;
+        btn.setAttribute('id', book.id);
+        btn.setAttribute('class', 'remove-btn');
+        btn.setAttribute('onclick', `removeme(${book.id});`);
+        section.appendChild(title);
+        section.appendChild(author);
+        section.appendChild(btn);
+        section.appendChild(hr);
+      });
+    }
+  }
+  white_check_mark
+  eyes
+  raised_hands
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
