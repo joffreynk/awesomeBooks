@@ -1,11 +1,10 @@
-let books = localStorage.getItem('books') === undefined || localStorage.getItem('books') === null ? [] : JSON.parse(localStoragegetItem('books'));
-
+let books = localStorage.getItem('books') === null  ||  localStorage.getItem('books') === undefined ? [] : JSON.parse(localStoragegetItem('books'));
 
 const submitbtn = document.getElementById('submit');
 
 function Mybooks() {
   if (books && books.length) {
-    let section = document.querySelector('.books');
+    const section = document.querySelector('.books');
     section.innerHTML = '';
     const listTtitle = document.createElement('h1');
     listTtitle.innerHTML = 'Awesome Books';
@@ -36,8 +35,8 @@ function addbook(title, author) {
   } else {
     const book = {
       id: books && books.length > 0 ? books[books.length - 1].id + 1 : 1,
-      title: title,
-      author: author,
+      title,
+      author,
     };
     books.push(book);
     localStorage.setItem('books', JSON.stringify(books));
@@ -45,7 +44,7 @@ function addbook(title, author) {
   }
 }
 
-submitbtn.addEventListener('click', function () {
+submitbtn.addEventListener('click', () => {
   const title = document.getElementById('input-title');
   const author = document.getElementById('input-author');
   const titleIpnut = title.value;
@@ -56,10 +55,10 @@ submitbtn.addEventListener('click', function () {
 });
 
 function removeme(id) {
-  books = books.filter((book) => book.id != Number(id));
+  books = books.filter((book) => book.id !== Number(id));
   localStorage.setItem('books', JSON.stringify(books));
   Mybooks();
 }
 
-removeme;
+removeme();
 Mybooks();
