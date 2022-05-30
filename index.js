@@ -1,4 +1,4 @@
-let books = localStorage.getItem('books') === null  ||  localStorage.getItem('books') === undefined ? [] : JSON.parse(localStoragegetItem('books'));
+let books = localStorage.getItem('books') === null || localStorage.getItem('books') === undefined ? [] : JSON.parse(localStorage.getItem('books'));
 
 const submitbtn = document.getElementById('submit');
 
