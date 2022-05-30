@@ -3,7 +3,7 @@ let books = localStorage.getItem('books') === null || localStorage.getItem('book
 const submitbtn = document.getElementById('submit');
 
 function Mybooks() {
-  if (books && books.length) {
+  if (books && books.length >= 0) {
     const section = document.querySelector('.books');
     section.innerHTML = '';
     const listTtitle = document.createElement('h1');
