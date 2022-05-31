@@ -15,8 +15,9 @@ class Books{
     this.books.push({id:this.id, author:this.author, title:this.title});
   }
   removeBook(id){
-    this.books= this.books.filter(book => book.id !== id) 
+    this.books= this.books.filter(book => book.id !== id)
   }
+  
 }
 
 const submitbtn = document.getElementById('submit');
