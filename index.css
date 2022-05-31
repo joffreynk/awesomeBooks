@@ -1,4 +1,22 @@
 * {
   margin: 0;
-  width: 0;
 }
+
+.books {
+  border: 2px solid #68d80d;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.bookslist {
+  border: 1px solid #d80d0d;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+

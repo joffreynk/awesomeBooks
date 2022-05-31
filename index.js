@@ -40,12 +40,12 @@ function Mybooks() {
       const btn = document.createElement('button');
       btn.innerHTML = 'Remove';
       const hr = document.createElement('hr');
-      title.innerHTML = book.title;
-      author.innerHTML = `by ${book.author}`;
+      //title.innerHTML = book.title;
+      author.innerHTML = `"${book.title}" by ${book.author}`;
       btn.setAttribute('id', book.id);
       btn.setAttribute('class', 'remove-btn');
       btn.setAttribute('onclick', `removeme(${book.id});`);
-      displyBooks.appendChild(title);
+      //displyBooks.appendChild(title);
       displyBooks.appendChild(author);
       displyBooks.appendChild(btn);
       displyBooks.appendChild(hr);
