@@ -1,4 +1,4 @@
-
+console.log(JSON.parse(localStorage.getItem('books')));
 class Books{
   constructor (){
     this.id= '';
@@ -21,11 +21,19 @@ class Books{
   getBooks() {
     return this.books;
   }
+
+  setBooks(par){
+    this.books = par;
+  }
 }
 
 const Book = new Books()
 
-let books = localStorage.getItem('books') === null || localStorage.getItem('books') === undefined ? Book.getBooks() : JSON.parse(localStorage.getItem('books'));
+if (localStorage.getItem('books')!==null&localStorage.getItem('books')!==undefined){
+ Book.setBooks(JSON.parse(localStorage.getItem('books')));
+}
+let books = Book.getBooks();
+
 
 
 const submitbtn = document.getElementById('submit');
@@ -60,6 +68,7 @@ function addbook(title, author) {
   } else {
     Book.addBook(books && books.length > 0 ? books[books.length - 1].id + 1 : 1,author, title)
     books = Book.getBooks()
+    console.log(books);
     localStorage.setItem('books', JSON.stringify(books));
     Mybooks();
   }
@@ -82,5 +91,5 @@ function removeme(id) {
   Mybooks();
 }
 
-removeme();
+// removeme();
 Mybooks();
