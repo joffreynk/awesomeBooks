@@ -1,4 +1,3 @@
-let books = localStorage.getItem('books') === null || localStorage.getItem('books') === undefined ? [] : JSON.parse(localStorage.getItem('books'));
 
 class Books{
   constructor (){
@@ -14,16 +13,20 @@ class Books{
     this.title = title;
     this.books.push({id:this.id, author:this.author, title:this.title});
   }
-  
+
   removeBook(id){
     this.books= this.books.filter(book => book.id !== id)
   }
-
 
   getBooks() {
     return this.books;
   }
 }
+
+const Book = new Books()
+
+let books = localStorage.getItem('books') === null || localStorage.getItem('books') === undefined ? Book.getBooks() : JSON.parse(localStorage.getItem('books'));
+
 
 const submitbtn = document.getElementById('submit');
 
@@ -55,12 +58,8 @@ function addbook(title, author) {
     const message = document.getElementById('message');
     message.innerHTML = 'please, fill all input fields';
   } else {
-    const book = {
-      id: books && books.length > 0 ? books[books.length - 1].id + 1 : 1,
-      title,
-      author,
-    };
-    books.push(book);
+    Book.addBook(books && books.length > 0 ? books[books.length - 1].id + 1 : 1,author, title)
+    books = Book.getBooks()
     localStorage.setItem('books', JSON.stringify(books));
     Mybooks();
   }
@@ -77,7 +76,8 @@ submitbtn.addEventListener('click', () => {
 });
 
 function removeme(id) {
-  books = books.filter((book) => book.id !== Number(id));
+  Book.removeBook(Number(id));
+  books = Book.getBooks();
   localStorage.setItem('books', JSON.stringify(books));
   Mybooks();
 }
