@@ -84,5 +84,19 @@ function removeme(id) {
   Mybooks();
 }
 
+const Links = document.querySelectorAll('.links');
+Links.forEach(link => {
+  link.addEventListener('click', (e) => {
+    const sections = document.querySelectorAll('section');
+    sections.forEach(section => {
+      if(){
+        
+      }
+    })
+  })
+})
+
 removeme();
 Mybooks();
+
+

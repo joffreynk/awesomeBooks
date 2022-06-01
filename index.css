@@ -35,7 +35,7 @@ h1 {
 }
 
 .form {
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -140,4 +140,12 @@ header {
 
 .links {
   cursor: pointer;
+}
+
+section {
+  display: none;
+}
+
+.list-section {
+  display: block;
 }
