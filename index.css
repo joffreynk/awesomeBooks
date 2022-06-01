@@ -20,6 +20,12 @@
   padding: 7px 0;
 }
 
+.contact-info li {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+}
+
 .bookslist li:nth-child(odd) {
   background-color: rgb(202, 201, 201);
 }
@@ -70,15 +76,8 @@ div .line {
 
 .contact {
   width: 50%;
-  margin:0 30%;
-  padding: auto;
+  margin: 0 30%;
   margin-bottom: 50px;
-}
-
-.contact-info li {
-  display: flex;
-  gap: 30px;
-  align-items: flex-start;
 }
 
 .contact-info > li {
@@ -156,6 +155,6 @@ section {
   display: none;
 }
 
-.showElement{
+.showElement {
   display: block;
 }

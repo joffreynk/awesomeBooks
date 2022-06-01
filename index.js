@@ -85,25 +85,22 @@ function removeme(id) {
 }
 
 const Links = document.querySelectorAll('.links');
-Links.forEach(link => {
+Links.forEach((link) => {
   link.addEventListener('click', () => {
     const sections = document.querySelectorAll('section');
     sections.forEach((sec) => {
       sec.classList.add('hide');
       if (sec.classList.contains('showElement')) {
-        sec.classList.remove('showElement')
-      }
-    })
+        sec.classList.remove('showElement');
+      };
+    });
     const section = document.querySelector(`section.${link.classList[1]}`);
-    section.classList.add('showElement')
-
+    section.classList.add('showElement');
   })
 })
 
 const dateTime = document.querySelector('.current-date');
-dateTime.innerHTML = new Date().toLocaleDateString() + ',   ' + new Date().toLocaleTimeString();
+dateTime.innerHTML = `${new Date().toLocaleDateString()},  ${new Date().toLocaleTimeString()}`;
 
 removeme();
 Mybooks();
-
-
