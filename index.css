@@ -3,11 +3,9 @@
   padding: 0;
 }
 
-
 .bookslist {
   border: 1px solid #0b0b0b;
   margin: 15px;
- 
 }
 
 .bookslist li > * {
@@ -19,7 +17,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding:7px 0;
+  padding: 7px 0;
 }
 
 .bookslist li:nth-child(odd) {
@@ -32,7 +30,6 @@ h1 {
 }
 
 .remove-btn {
-  height: fit-content;
   padding: 5px;
   margin-right: 15px;
 }
@@ -54,13 +51,18 @@ h2 {
   margin-bottom: 15px;
 }
 
-div .line {
-  min-width: 30%;
-  margin: 5% 35% 5% 35%;
-}
-
 .line {
   max-width: 50px;
   height: 2px;
   background: #494545;
+}
+
+div .line {
+  min-width: 30%;
+  margin: 40px 35%;
+}
+
+#form input {
+  width: 40vw;
+  height: 30px;
 }

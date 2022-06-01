@@ -1,40 +1,37 @@
-console.log(JSON.parse(localStorage.getItem('books')));
-class Books{
-  constructor (){
-    this.id= '';
+class Books {
+  constructor () {
+    this.id = '';
     this.author = '';
     this.title = '';
     this.books = [];
   }
 
-  addBook(id, author, title){
-    this.id= id;
+  addBook(id, author, title) {
+    this.id = id;
     this.author = author;
     this.title = title;
-    this.books.push({id:this.id, author:this.author, title:this.title});
+    this.books.push({ id: this.id, author: this.author, title: this.title });
   }
 
-  removeBook(id){
-    this.books= this.books.filter(book => book.id !== id)
+  removeBook(id) {
+    this.books = this.books.filter((book) => book.id !== id);
   }
 
   getBooks() {
     return this.books;
   }
 
-  setBooks(par){
+  setBooks(par) {
     this.books = par;
   }
 }
 
-const Book = new Books()
+const Book = new Books();
 
-if (localStorage.getItem('books')!==null&localStorage.getItem('books')!==undefined){
- Book.setBooks(JSON.parse(localStorage.getItem('books')));
+if (localStorage.getItem('books') !== null && localStorage.getItem('books') !== undefined){
+  Book.setBooks(JSON.parse(localStorage.getItem('books')));
 }
 let books = Book.getBooks();
-
-
 
 const submitbtn = document.getElementById('submit');
 
@@ -43,8 +40,7 @@ function Mybooks() {
     const displyBooks = document.querySelector('.bookslist');
     displyBooks.innerHTML = '';
     books.forEach((book) => {
-      const list  = document.createElement('li')
-      
+      const list = document.createElement('li');
       const author = document.createElement('p');
       const btn = document.createElement('button');
       btn.innerHTML = 'Remove';
@@ -54,7 +50,7 @@ function Mybooks() {
       btn.setAttribute('onclick', `removeme(${book.id});`);
       list.appendChild(author);
       list.appendChild(btn);
-      displyBooks.appendChild(list)
+      displyBooks.appendChild(list);
     });
   }
 }
@@ -64,9 +60,8 @@ function addbook(title, author) {
     const message = document.getElementById('message');
     message.innerHTML = 'please, fill all input fields';
   } else {
-    Book.addBook(books && books.length > 0 ? books[books.length - 1].id + 1 : 1,author, title)
-    books = Book.getBooks()
-    console.log(books);
+    Book.addBook(books && books.length > 0 ? books[books.length - 1].id + 1 : 1, author, title);
+    books = Book.getBooks();
     localStorage.setItem('books', JSON.stringify(books));
     Mybooks();
   }
