@@ -1,36 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Awesome Books</title>
-	<link rel="stylesheet" href="index.css">
-</head>
-<body>
-  <main>
-	  
-		<section class="books">
-			<h1>Awesome Books</h1>
-		  <ul class="bookslist">
-			  
-		  </ul>
-		</section>
-
-		<div>
-		<div class="line"></div>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header>
+		<div class="nav-section">
+			<h3>Awesome</h3>
+			<nav class="nav-links">
+				<ul>
+					<li class="links list-section">List</li>
+					<li class="links add-section">Add New</li>
+					<li class="links contact-section">Contact</li>
+				</ul>
+			</nav>
 		</div>
-		
-		<section class="form">
-			<h2>Add new book</h2>
-			<form action="#" id="form" method="POST">
-				<p id="message"></p>
-				<input type="text" name="input-title" id="input-title" placeholder="Titile" required> <br/><br/>
-				<input type="text" name="input-author" id="input-author" placeholder="Author" required> <br/><br/>
-				<button type="button" id="submit">Add book</button> <br/>
-			</form>
-		</section>
-	</main>
-	<script src="./index.js"></script>
-</body>
+		<div class="current-date"></div>
+
+    </header>
+    <main>
+      <section class="books list-section">
+        <h1>Awesome Books</h1>
+        <ul class="bookslist"></ul>
+      </section>
+
+      <section class=" add-section">
+        <div class="form">
+          <h2>Add new book</h2>
+          <form action="#" id="form" method="POST">
+            <p id="message"></p>
+            <input
+              type="text"
+              name="input-title"
+              id="input-title"
+              placeholder="Titile"
+              required
+            />
+            <br />
+            <input
+              type="text"
+              name="input-author"
+              id="input-author"
+              placeholder="Author"
+              required
+            />
+            <br />
+            <button type="button" id="submit">Add book</button> <br />
+          </form>
+        </div>
+
+      </section>
+      <section class="contact contact-section">
+        <h2>Contact information</h2>
+        <p>
+          Do you have any questions or you just want to say "Hello?"<br />
+          You can reach out to us!
+        </p>
+        <ul class="contact-info">
+          <li>
+            <div> our e-mails:</div>
+              <ul>
+                <li>
+                  <a href="mailto:joyjoffrey@gmail.com">joyjoffrey@gmail.com</a>
+                </li>
+                <li>
+                  <a href="mailto:ankomah.frederick@gmail.com">ankomah.frederick@gmail.com</a>
+                </li>
+                <li>
+                  <a href="mailto:darioalessiorivas@yahoo.com">darioalessiorivas@yahoo.com</a>
+                </li>
+              </ul>
+          </li>
+          <li>
+            <div>our phone numbers:</div>
+              <ul>
+                <li><a href="tel:+25776515792">+25776515792</a></li>
+                <li><a href="tel:+233243142288">+233243142288</a></li>
+                <li><a href="tel:+58-416-6056542">+58-416-6056542</a></li>
+              </ul>
+          </li>
+		  <li>
+			  <div>our addresses:</div>
+				<ul>
+				  <li>kanyosha, Bujumbura BURUNDI</li>
+				  <li>Teshie, Accra GHANA</li>
+				  <li>Caracas, Edo. Miranda, VENEZUELA</li>
+				</ul>
+		  </li>
+        </ul>
+      </section>
+    </main>
+    
+    <footer>
+      <div class="footer">
+        Copyrights reserved.
+      </div>
+    </footer>
+
+    <script src="./index.js"></script>
+  </body>
 </html>
