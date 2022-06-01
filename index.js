@@ -92,12 +92,12 @@ Links.forEach((link) => {
       sec.classList.add('hide');
       if (sec.classList.contains('showElement')) {
         sec.classList.remove('showElement');
-      };
+      }
     });
     const section = document.querySelector(`section.${link.classList[1]}`);
     section.classList.add('showElement');
-  })
-})
+  });
+});
 
 const dateTime = document.querySelector('.current-date');
 dateTime.innerHTML = `${new Date().toLocaleDateString()},  ${new Date().toLocaleTimeString()}`;

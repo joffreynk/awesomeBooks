@@ -26,10 +26,6 @@
   align-items: flex-start;
 }
 
-.bookslist li:nth-child(odd) {
-  background-color: rgb(202, 201, 201);
-}
-
 h1 {
   margin: 40px 0;
   text-align: center;
@@ -82,6 +78,10 @@ div .line {
 
 .contact-info > li {
   margin-top: 20px;
+}
+
+.bookslist li:nth-child(odd) {
+  background-color: rgb(202, 201, 201);
 }
 
 .contact h2 {
