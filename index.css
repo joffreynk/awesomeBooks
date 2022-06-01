@@ -65,4 +65,31 @@ div .line {
 #form input {
   width: 40vw;
   height: 30px;
+  margin-bottom: 12px;
+}
+
+.contact {
+  width: 50%;
+  margin:0 30%;
+  padding: auto;
+  margin-bottom: 100px;
+}
+
+.contact-info li {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+.contact-info > li {
+  margin-top: 20px;
+}
+
+.contact h2 {
+  margin: 50px auto;
+  margin-left: 10%;
+}
+
+a {
+  text-decoration: none;
 }
