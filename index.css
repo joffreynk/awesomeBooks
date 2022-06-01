@@ -93,3 +93,16 @@ div .line {
 a {
   text-decoration: none;
 }
+
+footer {
+  width: 96%;
+  margin-left: 2%;
+  margin-right: 2%;
+
+}
+
+.footer {
+  font-size: 15px;
+  border: 1px solid black;
+  padding: 5px;
+}

@@ -40,9 +40,9 @@ To get started with this book run index.html in your browser then it will gives 
 
 👤 **Dario** 
 
-<!-- - GitHub: [@joffreynk](https://github.com/JoffreyNK)
-- Twitter: [@joffreynk](https://twitter.com/home)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/joffrey-nkeshimana-15b8aa1b3/) -->
+- GitHub: https://github.com/DarioAlessioR
+- Slack: https://microverse-students.slack.com/team/U039GCFRK9B
+- LinkedIn: https://www.linkedin.com/in/dario-alessio-3a3b7911b
 
 ## 🤝 Contributing
 
