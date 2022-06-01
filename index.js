@@ -1,5 +1,5 @@
 class Books {
-  constructor () {
+  constructor() {
     this.id = '';
     this.author = '';
     this.title = '';
@@ -28,7 +28,7 @@ class Books {
 
 const Book = new Books();
 
-if (localStorage.getItem('books') !== null && localStorage.getItem('books') !== undefined){
+if (localStorage.getItem('books') !== null && localStorage.getItem('books') !== undefined) {
   Book.setBooks(JSON.parse(localStorage.getItem('books')));
 }
 let books = Book.getBooks();
