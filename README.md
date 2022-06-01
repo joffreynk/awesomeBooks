@@ -11,6 +11,7 @@ is **wireframe** based project. In this project users can create list of books i
 
 - HTML
 - JAVASCRIPT
+- CSS
 
 
 
@@ -35,6 +36,13 @@ To get started with this book run index.html in your browser then it will gives 
 - GitHub: [@joffreynk](https://github.com/JoffreyNK)
 - Twitter: [@joffreynk](https://twitter.com/home)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/joffrey-nkeshimana-15b8aa1b3/)
+
+
+👤 **Dario** 
+
+<!-- - GitHub: [@joffreynk](https://github.com/JoffreyNK)
+- Twitter: [@joffreynk](https://twitter.com/home)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/joffrey-nkeshimana-15b8aa1b3/) -->
 
 ## 🤝 Contributing
 
