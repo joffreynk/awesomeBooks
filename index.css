@@ -35,7 +35,7 @@ h1 {
 }
 
 .form {
-  display: none;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -147,5 +147,13 @@ section {
 }
 
 .list-section {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+.showElement{
   display: block;
 }
