@@ -100,6 +100,9 @@ Links.forEach(link => {
   })
 })
 
+const dateTime = document.querySelector('.current-date');
+dateTime.innerHTML = new Date().toLocaleDateString() + ',   ' + new Date().toLocaleTimeString();
+
 removeme();
 Mybooks();
 

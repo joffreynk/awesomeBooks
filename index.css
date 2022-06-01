@@ -99,6 +99,8 @@ footer {
   margin-left: 2%;
   margin-right: 2%;
   margin-bottom: 30px;
+  position: fixed;
+  bottom: 0;
 }
 
 .footer {
